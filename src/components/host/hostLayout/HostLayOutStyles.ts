@@ -1,0 +1,80 @@
+import { colors } from "../../../config/theme";
+
+export const styles = {
+  buttonsBox: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "space-between",
+    alignItems: "center",
+  },
+  uploadText: {
+    color: colors.white,
+    fontWeight: 500,
+    fontSize: "clamp(1.375rem, 1.3596rem + 0.0877vw, 1.5rem)",
+  },
+  videoButton: {
+    "&.MuiButtonBase-root": {
+      bgcolor: colors.charcoal,
+      border: "2px solid",
+      borderColor: colors.limedSpruce,
+      width: 100,
+    },
+  },
+  checkBoxMain: { display: "flex", gap: 0.5, alignItems: "center" },
+  autoCompleteBox: {
+    alignSelf: "center",
+    display: "flex",
+    justifyContent: "center",
+    mb: 2,
+    mt: 4,
+    width: "100%",
+  },
+  splitText: {
+    color: colors.dawn,
+    fontSize: "clamp(0.875rem, 0.8596rem + 0.0877vw, 1rem)",
+  },
+  firstDropBox: {
+    mt: 3,
+    height: 300,
+    borderRadius: 10,
+    width: { xs: "100%", sm: "75%" },
+    mx: "auto",
+  },
+  secondDropBox: {
+    mt: 1,
+    height: 220,
+    borderRadius: 10,
+    width: { xs: "100%", sm: "75%" },
+    mx: "auto",
+  },
+  outletContainer: { px: { xs: 2, md: 6 }, ml: { xs: 0, md: "280px" } },
+  modalStyle: {
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    maxHeight: "90vh",
+    width: { xs: "80%", sm: "85%", md: "70%", lg: "50%" },
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    boxSizing: "border-box",
+    borderRadius: "30px",
+    p: 3,
+    bgcolor: colors.lightBlack,
+    boxShadow: "rgba(226, 236, 249, 0.5) 0px 10px 60px 0px",
+  },
+  modalBox: {
+    display: "flex",
+    flexDirection: "column",
+    bgcolor: colors.lightBlack,
+    maxHeight: "81vh",
+    overflow: "auto",
+    mt: 2,
+    width: "100%",
+    "::-webkit-scrollbar": {
+      display: "none",
+    },
+  },
+};

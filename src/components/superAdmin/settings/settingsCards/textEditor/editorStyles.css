@@ -1,0 +1,22 @@
+.exampleContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+}
+.toolbar{
+    width: calc(100% - 200px);
+    max-width: 678px;
+    display: flex;
+    justify-content: end;
+    margin-left: auto;
+    border: none;
+}
+.hidden-toolbar{
+    width: calc(100% - 200px);
+    max-width: 678px;
+    display: none;
+    justify-content: end;
+    margin-left: auto;
+    border: none;
+}

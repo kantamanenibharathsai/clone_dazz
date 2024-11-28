@@ -1,0 +1,5 @@
+{
+  "logout": "Logout",
+  "getAllProducts": "Get All Products",
+  "getProductById": "Get Product By ID"
+}

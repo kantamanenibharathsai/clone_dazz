@@ -1,0 +1,70 @@
+import { colors } from "../../../config/theme";
+
+export const mediaCardStyles = {
+  mainContainer: {
+    borderRadius: "20px",
+    backgroundColor: colors.cement,
+    width: "100%",
+    height: "190px",
+    display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
+    justifyContent: "center",
+    position: "relative",
+  },
+  hexogonImgContainer: {
+    position: "relative",
+    width: "117px",
+    height: "119px",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+  },
+  imgStyles: {
+    position: "absolute",
+    bottom: 43.5,
+    left: 32,
+    width: "52px",
+    height: "52px",
+    borderRadius: "50%",
+  },
+  mediaTextContainer: {
+    width: "100%",
+    display: "flex",
+    justifyContent: "center",
+  },
+  mediaText: {
+    fontWeight: "600",
+    fontSize: "clamp(0.75rem, 0.7346rem + 0.0877vw, 0.875rem)",
+    whiteSpace: "nowrap",
+    overflow: "hidden",
+    textOverflow: "ellipsis",
+  },
+  btnsContainer: {
+    marginTop: "15px",
+    display: "flex",
+    justifyContent: "center",
+    width: "100%",
+    gap: 2,
+  },
+  iconStyle: {
+    width: "40px",
+    cursor: "pointer",
+  },
+  tickIconContainer: {
+    background: colors.primary,
+    width: "28px",
+    height: "28px",
+    borderRadius: "50%",
+    display: "grid",
+    placeItems: "center",
+    position: "absolute",
+    top: -8,
+    right: -10,
+  },
+  tickStyles: {
+    fontSize: "20px",
+    color: colors.white,
+  },
+};

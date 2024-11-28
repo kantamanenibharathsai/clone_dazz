@@ -1,0 +1,111 @@
+import { colors, fonts, hex2rgba } from "../../../config/theme";
+
+export const styles = {
+  changePasswordText: {
+    fontSize: "clamp(1.125rem, 1.0789rem + 0.2632vw, 1.5rem)",
+    fontWeight: 500,
+  },
+  commonStyle: {
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    outline: "none",
+    backgroundColor: colors.modalBg,
+    color: "white",
+    borderRadius: 5,
+    boxSizing: "border-box",
+    boxShadow: `0px 10px 60px 0px ${colors.modalBoxShadow}`,
+  },
+  verifyOtpModal: {
+    width: "85%",
+    maxWidth: "439px",
+    height: "568px",
+    p: "clamp(1rem, 0.7544rem + 1.4035vw, 3rem);",
+    pb: { xs: 2, sm: 10 },
+    pt: 6,
+  },
+  emailModal: {
+    height: "374px",
+    width: "85vw",
+    maxWidth: "544px",
+    px: "clamp(1rem, 0.2759rem + 4.1379vw, 4rem);",
+  },
+  changePasswordModal: {
+    minHeight: "414px",
+    width: "85vw",
+    maxWidth: "544px",
+    px: "clamp(1rem, 0.2759rem + 4.1379vw, 4rem);",
+  },
+  otpDigitContainer: {
+    fontSize: "clamp(1.25rem, 1.2116rem + 0.2193vw, 1.5625rem);",
+    px: "clamp(0.9375rem, 0.9114rem + 0.1491vw, 1.15rem);",
+    width: "clamp(2.8125rem, 2.6743rem + 0.7895vw, 3.9375rem)",
+    height: "clamp(3rem, 2.8388rem + 0.9211vw, 4.3125rem);",
+    borderRadius: "11.04px ",
+    border: "2.76px solid",
+    backgroundColor: hex2rgba(colors.darkGrey, 0.2),
+  },
+  verificationText: {
+    fontSize: "clamp(1.125rem, 1.0943rem + 0.1754vw, 1.375rem)",
+    fontWeight: "600",
+    textAlign: "left",
+  },
+  verificationLabel: {
+    fontSize: "clamp(0.625rem, 0.5943rem + 0.1754vw, 0.875rem)",
+    fontWeight: "500",
+    color: hex2rgba(colors.white, 0.5),
+  },
+  sendBtn: {
+    height: "48px",
+    width: "202px",
+    fontWeight: 600,
+    alignSelf: "center",
+    backgroundColor: colors.primary,
+  },
+  verifyOtpBtn: {
+    color: "white",
+    fontWeight: 600,
+    padding: "10px, 16px, 10px, 20px",
+    width: "clamp(12.5rem, 10.2069rem + 13.1034vw, 22rem)",
+    height: "60px",
+    textTransform: "none",
+    alignSelf: "center",
+  },
+  savePasswordBtn: {
+    fontWeight: 600,
+    padding: "10px, 16px, 10px, 20px",
+    width: "clamp(11.25rem, 10.9181rem + 1.8966vw, 12.625rem);",
+    height: "60px",
+    alignSelf: "center",
+  },
+  closeButton: {
+    position: "absolute",
+    top: "20px",
+    right: "20px",
+    "&.MuiButtonBase-root": {
+      backgroundColor: "white",
+      color: "black",
+      width: 30,
+      height: 30,
+    },
+  },
+  changeButton: {
+    width: "188px",
+    height: "48px",
+    fontWeight: 600,
+  },
+  textFieldStyle: { width: "100%", maxWidth: "398px" },
+  notReceiveYet: {
+    fontSize: "clamp(0.9375rem, 0.8991rem + 0.2193vw, 1.25rem)",
+    color: colors.grey,
+    fontFamily:fonts.raleway
+  },
+  resend: {
+    textDecoration: "underline",
+    color: colors.activeColor,
+    cursor: "pointer",
+    fontSize: "inherit",
+  },
+  validationText: { color: colors.validate, fontWeight: 600 },
+};

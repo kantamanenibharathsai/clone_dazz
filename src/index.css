@@ -1,0 +1,45 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #292C2E;
+}
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  margin: 0;
+}
+
+.text-shadow-drop-left {
+  -webkit-animation: text-shadow-drop-left 0.5s
+    cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-shadow-drop-left 0.5s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  font-weight: 700 !important;
+  font-family: "Nunito Sans" !important;
+}
+.pac-container.pac-logo{
+  z-index: 19999 !important;
+}
+@keyframes text-shadow-drop-left {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+  100% {
+    -webkit-filter: blur(0);
+    filter: blur(0);
+    opacity: 1;
+    text-shadow: -6px 0 18px rgba(243, 243, 243, 0.846);
+  }
+}
+.gm-ui-hover-effect {
+  display: none !important;
+}
+*{
+  margin:0;
+}

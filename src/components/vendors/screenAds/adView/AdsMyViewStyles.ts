@@ -1,0 +1,132 @@
+import { colors, hex2rgba } from "../../../../config/theme";
+
+export const adsMyViewStyles = {
+  statusContainer: {
+    display: "flex",
+    alignItems: "center",
+    gap: 1.5,
+    mt: 1,
+  },
+  demoTextMainBox: { display: "flex", justifyContent: "space-between" },
+  statusText: {
+    color: colors.white,
+    fontSize: "22px",
+    fontWeight: "600",
+  },
+  videoMainBox: {
+    width: "100%",
+    bgcolor: colors.white,
+    mt: { xs: 19, lg: 5 },
+    borderRadius: "35px",
+  },
+  videInnerBox: {
+    position: "relative",
+  },
+  video: { width: "100%" },
+  videoCardsBox: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: "center",
+    gap: 2,
+    transform: { xs: "translateY(-10%)", sm: "translateY(-30%)" },
+    px: { xs: 0, sm: 2, lg: 25, xl: 45 },
+  },
+  videoBox: {
+    backgroundColor: colors.black,
+    border: "3px solid",
+    borderRadius: "35px",
+    display: "flex",
+    flexDirection: "column",
+    transform: "translateY(-50%)",
+    mx: "auto",
+    width: { xs: 320, sm: 400 },
+  },
+  statusBox: {
+    backgroundColor: hex2rgba(colors.green, 1),
+    borderRadius: "7px",
+    padding: "5px 10px",
+    color: colors.white,
+    fontWeight: "600",
+    fontSize: "15px",
+  },
+  timeText: {
+    color: colors.lightGreen,
+    fontSize: "15px",
+    fontWeight: "500",
+  },
+  tagBox: {
+    background: colors.lightGreen,
+    borderRadius: "60px",
+    fontSize: "17px",
+    fontWeight: "500",
+    color: colors.white,
+    padding: "5px 15px",
+  },
+
+  getScreenShotBtn: {
+    background: colors.green,
+    border: `4px solid ${colors.black}`,
+    boxShadow: `0px 10px 60px 0px ${colors.modalBoxShadow}`,
+    borderRadius: "25px",
+    "&:hover": {
+      background: colors.green,
+    },
+    textTransform: "capitalize",
+    fontSize: "16px",
+    fontWeight: "600",
+    color: colors.white,
+    padding: "3px 30px",
+  },
+  videoImgContainer: {
+    position: "relative",
+  },
+  btnContainer: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    mt: "-5px",
+  },
+  videoBtnContainer: {
+    backgroundColor: hex2rgba(colors.black, 0.8),
+    width: "50px",
+    height: "50px",
+    borderRadius: "50%",
+    position: "absolute",
+    top: "50%",
+
+    left: "50%",
+    transform: "translate(-50%, -50%)",
+    display: "grid",
+    placeItems: "center",
+    cursor: "pointer",
+  },
+  iconBtn: {
+    color: colors.white,
+  },
+  adsPropertiesContainer: {
+    display: "flex",
+    flexWrap: "wrap",
+    justifyContent: { xs: "flex-start", sm: "center" },
+    position: "absolute",
+    top: 250,
+    gap: 2,
+    padding: { xs: "25px", xl: "0px 305px" },
+  },
+  adsPropertiesBox: {
+    backgroundColor: hex2rgba(colors.lightGreen, 0.1),
+    borderRadius: "10px",
+    padding: "18px 40px",
+    display: "grid",
+    placeItems: "center",
+  },
+  adsPropertiesText: {
+    color: colors.uploadText,
+    fontSize: "17px",
+    fontWeight: "600",
+  },
+  adsPropertiesSubText: {
+    color: hex2rgba(colors.green, 1),
+    fontWeight: "450",
+    fontSize: "14px",
+  },
+};
